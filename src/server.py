@@ -12,15 +12,15 @@ def addProxyPass():
         return abort(401)
     port = request.args.get('port')
     host = request.args.get('host')
-    client_id = request.args.get('clientid')
+    filename = request.args.get('filename')
     vhost = request.args.get('vhost')
-    generate_config(host, port, vhost, client_id)
+    generate_config(host, port, vhost, filename)
     reload_nginx()
     return "added vhost"
 
 
 @app.route('/vhost/<string:clientid>', methods=['DELETE'])
-def deleteProxyPass(clientid):
+def deleteProxyPass(filename):
     apikey = request.headers.get('Authorization')
     if not Authenticated(apikey):
         return abort(401)
