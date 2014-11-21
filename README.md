@@ -17,4 +17,4 @@ use some tool to generate an super secret api-key for your config.py.
 
 ### DISCLAIMER
 
-For this POC the server.py needs to run as sudo. You probably what this running inside a trusted enviorment. 
+For this POC the server.py needs to run as sudo. You probably what this running inside a trusted environment. 
