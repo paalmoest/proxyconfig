@@ -6,7 +6,8 @@ Configurate your proxy passes with http POST call.
     sudo python server.py
 
 Create a new reverse proxy pass
-  curl -XPOST -H "Authorization: <super-secret-key>" http://localhost:5000?port=1337&host=localhost&filename=webapp/some-id&vhost=webapp
+        curl -XPOST -H "Authorization: <super-secret-key>"            
+        http://localhost:5000?port=1337&host=localhost&filename=webapp/some-id&vhost=webapp
 
 Now you can access your webapp at http://localhost/webapp/
 
