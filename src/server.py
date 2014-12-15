@@ -36,7 +36,7 @@ def Authenticated(apikey):
 
 
 def reload_nginx():
-    command = ['/usr/sbin/service', 'nginx', 'reload']
+    command = ['sudo', '/usr/sbin/service', 'nginx', 'reload']
     subprocess.call(command, shell=False)
 
 
